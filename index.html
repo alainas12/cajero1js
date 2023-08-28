@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cajero Automático</title>
+  <link type="image/png" sizes="16x16" rel="icon" href="./img/icons8-dinero-16.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cajero">
+    <h1>Cajero Automático</h1>
+    <div id="loginForm">
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario">
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena">
+      <button id="iniciarSesion">Iniciar Sesión</button>
+    </div>
+    <div id="operaciones" style="display: none;">
+      <p id="saldoInicial">Saldo inicial: $1000</p>
+      <label for="monto">Ingrese el monto a retirar o depositar:</label>
+      <input type="number" id="monto" min="0">
+      <button id="retirar">Retirar</button>
+      <button id="depositar">Depositar</button>
+      <p id="saldoFinal"></p>
+      <button id="cambiarContrasena">Cambiar Contraseña</button>
+    </div>
+    <div id="cambioContrasenaForm" style="display: none;">
+      <label for="nuevaContrasena">Nueva Contraseña:</label>
+      <input type="password" id="nuevaContrasena">
+      <button id="guardarContrasena">Guardar</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
